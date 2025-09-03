@@ -54,6 +54,26 @@ public class UtilsTest
     }
 
     @Test
+    public void TesteDivisaoPorZero()
+    {
+        ArithmeticException e = assertThrows(ArithmeticException.class, () -> {
+            Utils.dividir(10, 0);
+        });
+
+        assertEquals("Divisão por zero não é permitida.", e.getMessage());
+    }
+
+    @Test
+    public void TesteRaizNegativa()
+    {
+        ArithmeticException e = assertThrows(ArithmeticException.class, () -> {
+           Utils.raiz(-2);
+        });
+
+        assertEquals("Não existe raiz quadrada real de número negativo.", e.getMessage());
+    }
+    
+    @Test
     public void TesteSomaError()
     {
         int resultado = Utils.somar(2, 2);
