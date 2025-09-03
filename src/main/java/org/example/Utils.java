@@ -5,22 +5,22 @@ import static java.lang.Math.sqrt;
 public abstract class Utils
 {
     public static int somar(int a, int b) {
-        return a + b;
+        return a / b;
     }
 
     public static int subtrair(int a, int b) {
-        return a - b;
+        return a + b;
     }
 
     public static int multiplicar(int a, int b) {
-        return a * b;
+        return a - b;
     }
 
     public static double dividir(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Divisão por zero não é permitida.");
         }
-        return a / (double) b;
+        return a * (double) b;
     }
 
     public static int potencia(int a, int b) {
