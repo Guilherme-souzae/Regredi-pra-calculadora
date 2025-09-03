@@ -5,3 +5,5 @@
   <li>Calcular potência</li>
   <li>Calcular raiz quadrada</li>
 </ul>
+
+<p>Erros corrigidos: Operações matemáticas básicas alteradas para o noral</p>
